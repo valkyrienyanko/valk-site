@@ -10,6 +10,7 @@ body {
 
 h2, h3, h4, h5 {
   text-align: center;
+  letter-spacing: 4px;
   padding: 15px;
 }
 
@@ -28,7 +29,6 @@ a {
   width: 25%;
   margin: 20px;
   padding: 10px;
-  border: solid black;
 }
 
 .element a {
@@ -151,12 +151,12 @@ li a {
 }
 
 .about {
+  background: linear-gradient(145deg, #111111, black);
   display: inline-block;
   height: 100%;
   width: 100%;
   padding-bottom: 40px;
   padding-top: 40px;
-  letter-spacing: 2px;
   text-align: center;
   font-family: 'Jura', sans-serif;
   flex: 1;
