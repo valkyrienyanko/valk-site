@@ -1,0 +1,48 @@
+html {
+	background-color: rgb(0, 0, 12);
+	color: rgb(200, 200, 240);
+}
+
+a {
+	text-decoration: none;
+	color: rgb(175, 175, 255);
+}
+
+summary {
+	border: 0;
+	outline: none;
+	transition-duration: 0.4s;
+}
+
+summary::-webkit-details-marker {
+	display: none
+}
+
+.style {
+	background-color: rgb(0, 0, 32);
+	color: rgb(175, 175, 255);
+	padding: 10px;
+	margin-top: 3px;
+	transition-duration: 0.4s;
+}
+
+.style:hover {
+	background-color: rgb(10, 10, 42);
+}
+
+.button {
+	background-color: rgb(0, 0, 32);
+	color: rgb(175, 175, 255);
+	border: none;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	outline: none;
+}
+
+.button:hover {
+	color: white;
+}

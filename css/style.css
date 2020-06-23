@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: 'Inconsolata', sans-serif;
+}
+
+h2, h3, h4, h5 {
+  text-align: center;
+  padding: 15px;
+}
+
+a {
+  transition: color 0.5s ease;
+}
+
+.about-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.element {
+  transition-duration: 0.5s;
+  display: inline-grid;
+  width: 25%;
+  margin: 20px;
+  padding: 10px;
+  border: solid black;
+}
+
+.element a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.element a:hover {
+  color: hotpink;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background: black;
+  justify-content: space-evenly;
+}
+
+.links {
+  font-size: 18px;
+  font-family: 'Inconsolata', sans-serif;
+  letter-spacing: 2px;
+}
+
+.links ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  display: inline-block;
+  /*This use to be flex but I'm changing it since there is currently only one link.*/
+  width: 100%;
+}
+
+.links li {
+  padding: 16px;
+}
+
+.links a:hover {
+  color: #ff69b4;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.banner {
+  transition-duration: 0.5s;
+  filter: grayscale(0%);
+  background-position: center;
+  background-image: url("../img/background.png");
+  background-attachment: fixed;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+  background-size: cover;
+}
+
+.splash-title {
+  color: white;
+  text-align: center;
+  font-size: 2.125vw;
+  font-family: 'Jura', sans-serif;
+  letter-spacing: 2.125vw;
+  transition: all 1.5s ease;
+  animation: doOpacity 1s linear, doFontSize 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.splash-title h1 {
+  letter-spacing: 3.125vw;
+}
+
+@keyframes doFontSize {
+  from {
+    font-size: 2.125vw;
+  }
+  to {
+    font-size: 1.125vw;
+  }
+}
+
+@keyframes doOpacity {
+  from {
+    filter: blur(15px);
+    opacity: 0.03;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1.0;
+  }
+}
+
+.about-background {
+  transition-duration: 0.5s;
+  filter: grayscale(0%);
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/art5.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.background-2 {
+  transition-duration: 0.5s;
+  filter: grayscale(0%);
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/art6.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.about {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Jura', sans-serif;
+  flex: 1;
+}
+
+.padding {
+  padding: 100px;
+}
+
+.background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
