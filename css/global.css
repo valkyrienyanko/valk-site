@@ -35,7 +35,29 @@ ul {
   margin: 0px;
 }
 
-a {
+@keyframes blink {
+  from {
+    color: white;
+  }
+  to {
+    color: hotpink;
+  }
+}
+
+.link a {
+  color: #ffffff;
+  /*transition: color 0.5s ease;*/
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.link a:hover {
+  color: #ff69b4;
+}
+
+.hiddenlink a {
   display: block;
   color: #ffffff;
   text-align: center;
@@ -43,7 +65,7 @@ a {
   transition: color 0.5s ease;
 }
 
-a:hover {
+.hiddenlink a:hover {
   color: #ff69b4;
 }
 
