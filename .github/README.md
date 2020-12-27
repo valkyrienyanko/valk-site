@@ -1,2 +1,2 @@
-http://valk.live  
-https://valkyrienyanko.github.io/valky/  
+https://valk.live  
+https://valkyrienyanko.github.io/valk-site/  
