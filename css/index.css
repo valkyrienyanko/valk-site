@@ -30,6 +30,10 @@
   animation-fill-mode: forwards;
 }
 
+.splash-title-sub {
+  letter-spacing: 0.2vw;
+}
+
 @keyframes doOpacity {
   from {
     filter: blur(15px);
